@@ -144,7 +144,10 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.blue.shade50,
             child: ListTile(
               leading: const Icon(Icons.my_location, color: Colors.blue),
-              title: const Text('Wyszukaj za pomocą lokalizacji'),
+                title: const Text(
+                'Wyszukaj za pomocą lokalizacji',
+                style: TextStyle(color: Colors.black),
+                ),
               onTap: () {
               Navigator.push(
                 context,
