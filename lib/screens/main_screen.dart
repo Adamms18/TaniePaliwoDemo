@@ -25,9 +25,9 @@ class _MainScreenState extends State<MainScreen> {
 
   // Lista tytułów dla paska aplikacji
   static const List<String> _appBarTitles = <String>[
-    'Map',
-    'Home',
-    'Profile',
+    'Mapa',
+    'Lista stacji',
+    'Profil',
   ];
 
   void _onItemTapped(int index) {
@@ -62,15 +62,15 @@ class _MainScreenState extends State<MainScreen> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
-            label: 'Map',
+            label: 'Mapa',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
+            icon: Icon(Icons.list),
+            label: 'Lista stacji',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: 'Profile',
+            label: 'Profil',
           ),
         ],
         currentIndex: _selectedIndex,
